@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1f1f1f; /* Dark background */
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #282c35; /* Dark blue header */
+    color: #79cfe7; /* Bright blue text */
+    text-align: center;
+    padding: 20px; /* Increased padding for header */
+}
+
+nav {
+    background-color: #333; /* Dark gray navigation bar */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px; /* Slightly increased font size */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #61dafb; /* Bright blue color on hover */
+}
+
+section {
+    margin: 20px;
+    padding: 30px; /* Increased padding for sections */
+    background-color: #333; /* Dark gray sections */
+    border: 1px solid #444; /* Slightly lighter border */
+    border-radius: 8px; /* Rounded corners for sections */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions on hover */
+}
+
+/* Add some hover effects for sections */
+section:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); /* Increased box shadow on hover */
+}

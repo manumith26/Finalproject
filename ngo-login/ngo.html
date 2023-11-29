@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cancer Awareness Hub - NGO Login</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cancer Awareness Hub</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a> |
+		<a href="../general-checkups/general-checkups.html">General Checkups</a> |
+        <a href="../hair-donations/hair-donations.html">Hair Donations</a> |
+        <a href="../awareness-page/awareness-page.html">Awareness Page</a> |
+		<a href="../hospitals-login/hospitals-login.html">Hospitals Login</a>
+
+    </nav>
+
+    <section id="ngo-login">
+        <h2>NGO Login</h2>
+
+        <form id="login-form">
+            <label for="username">username:</label>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="password">password:</label>
+            <input type="password" id="password" name="password" required><br>
+
+            <input type="submit" value="Login">
+        </form>
+      <script>
+    document.getElementById('login-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      var validCredentials = {
+        'sanjana': 'sanjanareddy',
+        'saranya': 'saranya123',
+        'tharunya': 'tarunya123'
+      };
+
+      if (validCredentials[username] && validCredentials[username] == password) {
+        alert('Login successful!');
+      } else {
+        alert('Invalid username or password. Please try again.');
+      }
+    });
+  </script>
+    </section>
+
+    <footer>
+        &copy; 2023 Cancer Awareness Hub
+    </footer>
+</body>
+</html>

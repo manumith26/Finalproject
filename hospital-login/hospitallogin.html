@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cancer Awareness Hub - Hospitals Login</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cancer Awareness Hub</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a> |
+		<a href="../general-checkups/general-checkups.html">General Checkups</a> |
+        <a href="../hair-donations/hair-donations.html">Hair Donations</a> |
+        <a href="../awareness-page/awareness-page.html">Awareness Page</a> |
+        <a href="../ngo-login/ngo-login.html">NGO Login</a> |
+    </nav>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+</head>
+<body>
+
+  <form id="hospitals-login">
+    <label for="username">username:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="password">password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Login</button>
+  </form>
+
+  <script>
+    document.getElementById('hospitals-login').addEventListener('submit', function (event) {
+      event.preventDefault();
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      var validCredentials = {
+        'sanjana': 'sanjanareddy',
+        'saranya': 'saranya123',
+        'tharunya': 'tarunya123'
+      };
+
+      if (validCredentials[username] && validCredentials[username] == password) {
+        alert('Login successful!');
+      } else {
+        alert('Invalid username or password. Please try again.');
+      }
+    });
+  </script>
+    </section>
+
+    <footer>
+        &copy; 2023 Cancer Awareness Hub
+    </footer>
+</body>
+</html>

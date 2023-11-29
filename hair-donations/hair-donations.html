@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hair Donations</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cancer Awareness Hub</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a> |
+        <a href="../general-checkups/general-checkups.html">General Checkups</a> |
+        <a href="../awareness-page/awareness-page.html">Awareness Page</a> |
+        <a href="../ngo-login/ngo-login.html">NGO Login</a> |
+        <a href="../hospitals-login/hospitals-login.html">Hospitals Login</a>
+    </nav>
+
+    <section id="hair-donations">
+        <h2>Hair Donations</h2>
+        <p>
+            Donors can register to donate hair for cancer patients. Please provide your personal information and hair color.
+        </p>
+
+        <form id="donation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="hair-color">Hair Color:</label>
+            <input type="text" id="hair-color" name="hair-color" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <!-- Hair Donation Details -->
+            <label for="hair-length">Hair Length (in inches):</label>
+            <input type="number" id="hair-length" name="hair-length" required><br>
+
+            <label for="hair-type">Hair Type:</label>
+            <select id="hair-type" name="hair-type" required>
+                <option value="straight">Straight</option>
+                <option value="wavy">Wavy</option>
+                <option value="curly">Curly</option><br>
+            </select>
+
+            <input type="submit" value="Register for Donation">
+        </form>
+         
+           <script>
+       document.getElementById('donation-form').addEventListener('submit', function(event) {
+       event.preventDefault();
+      alert('Form submitted successfully!');
+  });
+</script>
+
+    </section>
+
+    <footer>
+        &copy; 2023 Cancer Awareness Hub
+    </footer>
+</body>
+</html>

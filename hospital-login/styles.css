@@ -1,0 +1,80 @@
+/* Add your CSS styling for the Hospitals Login Page here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFC0CB;
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+    display: flex;
+    flex-direction: column; /* Use flex layout for sticky footer */
+}
+
+header {
+    background-color: #FF00FF;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #DA70D6;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #FF00FF;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+
+/* Style for form labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Style for input fields */
+input[type="text"],
+input[type="password"] {
+    width: 30%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    background-color: #FFC0CB;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #FF00FF;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>General Checkups</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Cancer Awareness Hub</h1>
+    </header>
+
+    <nav>
+        <a href="../index.html">Home</a> |
+        <a href="../hair-donations/hair-donations.html">Hair Donations</a> |
+        <a href="../awareness-page/awareness-page.html">Awareness Page</a> |
+        <a href="../ngo-login/ngo-login.html">NGO Login</a> |
+        <a href="../hospitals-login/hospitals-login.html">Hospitals Login</a>
+    </nav>
+
+    <section id="general-checkups">
+        <h2>General Checkups</h2>
+        <p>
+           Once you are registered QR will be generated.
+        </p>
+
+        <form id="checkup-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="issue">Health Issue:</label>
+            <textarea id="issue" name="issue" rows="4" required></textarea>
+
+            <label for="previous-issues">Previous Medical Issues:</label>
+            <textarea id="previous-issues" name="previous-issues" rows="4"></textarea>
+
+            <input type="submit" value="Register">
+        </form>
+           <script>
+       document.getElementById('checkup-form').addEventListener('submit', function(event) {
+       event.preventDefault();
+      alert('Form submitted successfully!');
+      });
+      </script>
+    </section>
+
+    <footer>
+        &copy; 2023 Cancer Awareness Hub
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
